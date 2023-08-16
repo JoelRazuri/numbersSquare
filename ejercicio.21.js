@@ -8,11 +8,13 @@ const numbersSquare = (list=[]) => {
     if (list.length === 0) return console.warn("Lista vacía, debe ingresar una lista númerica");
     if (!Array.isArray(list)) return console.error("Error, debe ingresar una lista");
     
+    let list2 = [];
+
     for (let i=0; i<list.length; i++){
-        list[i] = list[i] ** 2; 
+        list2[i] = list[i] ** 2; 
     }
 
-    return console.info(list);
+    return console.info(list2);
 }
 
 
